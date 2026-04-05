@@ -1,0 +1,156 @@
+.navbar {
+  color: var(--color-text);
+  font-family: var(--font-sans);
+  font-weight: var(--fw-bold);
+  display: flex;
+  width: 100%;
+  height: 100px;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  backdrop-filter: blur(0.5rem);
+}
+.navbar > div {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 100%;
+}
+.nav-nav .nav-border ol {
+  padding: 1rem;
+  background: linear-gradient(60deg, color-mix(in srgb, var(--color-surface) 5%, var(--color-bg) 90%), transparent 200%);
+  box-shadow: 0px 1px 0px 1px color-mix(in srgb, var(--color-bg-inverse) 20%, var(--color-bg) 90%);
+  border-radius: 0.5rem;
+}
+
+.nav-logo {
+  width: 10%;
+  display: flex;
+  align-items: center;
+  font-family: var(--font-sans-bold);
+}
+
+.nav-logo a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.25rem;
+    letter-spacing: 0.25rem;
+    font-weight: var(--fw-bold);
+}
+
+.nav-nav {
+  width: 80%;
+}
+.nav-sign {
+  width: 10%;
+  
+}
+.navbar ol {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.navbar ol li a {
+  color: var(--color-text-muted);
+  padding: 0.75rem 1rem;
+  transition: all 0.3s ease;
+}
+
+.navbar ol li a.active-nav {
+  color: var(--color-text);
+}
+.navbar ol li a:hover {
+  color: var(--color-surface);
+}
+
+ol li {
+  list-style: none;
+}
+
+.navbar > .nav-sign a {
+  padding: 12px !important;
+  width: 100%;
+  border-radius: 12px;
+  width:80px;
+  text-align: center;
+  transition: all 0.3s ease;
+  /* background-color: red; */
+}
+.nav-sign a:hover {
+  background-color: var(--color-surface);
+}
+
+.menu span {
+  display: none;
+  cursor: pointer;
+  font-size: 1.75rem;
+}
+
+.navbar .mobile-sign {
+  display: none;
+}
+
+@media screen and (max-width: 845px) {
+  .nav-nav {
+    width: 100%;
+  }
+  .navbar {
+    width: 100%;
+    padding: 0 1.75rem;
+    height: 75px;
+  }
+
+  #menu {
+    display: none;
+    transform: translateX(-100%);
+    opacity: 0;
+    transition: all 0.3s ease;
+  }
+
+  #menu.show {
+    display: flex;
+    padding: 3.5rem 0;
+    gap: 1rem;
+    align-items: flex-start;
+    justify-content: flex-start;
+    font-size: 1.25rem;
+    transform: translateX(0);
+    opacity: 1;
+
+  }
+
+  .nav-list {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 75px;
+    right: 0;
+    width: 100%;
+    background-color: oklch(0% 0 0);
+  }
+
+  
+
+  .nav-sign a {
+    display: none;
+    flex-direction: column;
+  }
+
+  .menu span {
+    display: block;
+  }
+  
+  .navbar .mobile-sign {
+    display: block;
+  }
+
+
+}
+
+
+
