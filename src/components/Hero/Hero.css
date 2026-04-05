@@ -92,9 +92,9 @@
   transition: all 0.3s ease-in-out;
 }
 
-#hero-container .hero-cta a::after:hover a {
+/* #hero-container .hero-cta a::after:hover a {
   color: var(--color-text-inverse);
-}
+} */
 
 #hero-container .hero-cta a:hover::after {
   content: " ";
