@@ -2,7 +2,10 @@ import './style.css'
 import 'remixicon/fonts/remixicon.css'
 import { Navbar } from './components/Navbar/Navbar.js'
 import { Hero } from './components/Hero/Hero.js'
+import { Courses } from './components/Courses/Courses.js'
 import { ImageMarquee } from './components/ImageMarquee/ImageMarquee.js'
+
+import { Banner } from './components/Banner/Banner.js'
 import { Footer } from './components/Footer/Footer.js'
 
 // import Lenis from 'lenis'
@@ -15,6 +18,8 @@ function render(){
     ${Navbar()}
     ${Hero()}
     ${ImageMarquee()}
+    ${Courses()}
+    ${Banner()}
     ${Footer()}
     
     `;

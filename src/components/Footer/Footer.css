@@ -7,8 +7,6 @@
   font-family: var(--font-display-light );
   margin : auto 0;
 }
-
-/* Brand / heading */
 .footer__brand {
   height: 50%;
   display: flex;
@@ -33,14 +31,12 @@
      1px  1px 0 var(--color-bg-inverse);
 }
 
-/* Bottom row: social + nav side by side */
 .footer__bottom {
   display: flex;
   height: 50%;
   gap: 2rem;
 }
 
-/* Social icons column */
 .footer__social {
   width: 50%;
   padding-top: 30px;
@@ -62,7 +58,7 @@
   color: var(--color-surface);
 }
 
-/* Nav groups column */
+
 .footer__nav-groups {
   display: flex;
   width: 50%;
@@ -94,13 +90,11 @@
   color: var(--color-surface);
 }
 
-/* Contact links stack vertically */
 .footer__contact-item {
   display: flex;
   flex-direction: column;
 }
 
-/* Copyright bar */
 .footer__copyright {
   width: 100%;
   border-top: 1px solid #2a2a2a;
@@ -120,7 +114,6 @@
 }
 
 
-/* ── Tablet (≤ 1005px) ── */
 @media (max-width: 1005px) {
   .footer__bottom {
     flex-direction: column;
@@ -144,7 +137,7 @@
   }
 }
 
-/* ── Mobile (≤ 644px) ── */
+
 @media (max-width: 644px) {
   .footer {
     min-height: unset;

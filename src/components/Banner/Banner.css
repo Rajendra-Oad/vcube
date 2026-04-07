@@ -1,0 +1,86 @@
+.banner-container {
+  font-family: var(--font-display-light);
+  backdrop-filter: blur(0.25rem);
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  text-align: center;
+  width: 100%;
+  min-height: 100vh;
+  position: relative;
+}
+
+.banner-container .banner-content {
+  color: var(--color-text);
+  font-size: 2rem;
+  max-width: 60%;
+  z-index: 1;
+}
+
+.banner-container .banner-cta {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 200px;
+  margin: 0 auto;
+  height: 45px;
+  margin-top: 1.5rem;
+  padding: 0.75rem 1.5rem;
+  background: linear-gradient(
+    to right,
+    var(--color-surface) 90%,
+    var(--color-bg) 200%
+  );
+  border-radius: 8px;
+  border-style: none;
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 425px) {
+  .banner-container {
+    background-image: radial-gradient(circle at 30% 30%, transparent, black 78%)
+      url("../../assets/images/banenr.jpg") !important;
+    font-family: var(--font-display-light);
+    backdrop-filter: blur(0.25rem);
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1.5rem;
+    line-height: 2rem;
+    width: 100%;
+    min-height: 60vh;
+    position: relative;
+  }
+  .banner-container .banner-content {
+    color: var(--color-text);
+    font-size: 1.25rem;
+    max-width: 100%;
+    z-index: 1;
+  }
+
+  .banner-container .banner-cta {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 160px;
+    margin: 0 auto;
+    height: 40px;
+    margin-top: 1.5rem;
+    padding: 0.75rem 1.5rem;
+    background: linear-gradient(
+      to right,
+      var(--color-surface) 90%,
+      var(--color-bg) 200%
+    );
+    border-radius: 8px;
+    border-style: none;
+    color: white;
+    font-size: 0.75rem;
+    cursor: pointer;
+  }
+}

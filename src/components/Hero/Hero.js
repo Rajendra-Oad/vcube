@@ -5,7 +5,7 @@ export function Hero() {
         <div class="section" id="hero-container" class="hero-container">
             <div class="hero-content">
                 <p class="hero-text">LEARN. BUILD. GET PLACED.</p>
-                <h1 class="hero-heading">From Beginner to Software Developer Even Without Coding Experience</h1>
+                <h1 class="hero-heading">From Beginner to Software <span class="highlight">Developer</span> Even Without Coding Experience</h1>
                 <p class="hero-subheading">Learn Java, Python & Full Stack with real projects and placement support.</p>
                 <div class="hero-points">
                     <ul>

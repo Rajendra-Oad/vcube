@@ -81,9 +81,9 @@ ol li {
   transition: all 0.3s ease;
   /* background-color: red; */
 }
-.nav-sign a:hover {
+/* .nav-sign a:hover {
   background-color: var(--color-surface);
-}
+} */
 
 .menu span {
   display: none;

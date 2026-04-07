@@ -62,6 +62,11 @@
   --fw-bold: 700;
   --fw-ultrabold: 800;
 
+  --fs-small: 0.875rem;
+  --fs-base: 1rem;
+  --fs-medium: 2rem;
+  --fs-large: 3rem;
+
 }
 
 * {
@@ -73,8 +78,9 @@
 html, body {
   width: 100%;
   height: 100%;
-  /* background: var(--color-bg); */
+  background: var(--color-bg);
   color: var(--color-text);
+  font-family: var(--font-display-regular);
 
 }
 
@@ -86,24 +92,55 @@ a {
 .hover-container {
   display: inline-block;
   overflow: hidden;
-  height: 1.5em;
+  height: 2.25em;
   line-height: 1.5em;
   cursor: pointer;
+  border-radius: 0.5rem;
+  padding: 1rem 1.5rem;
+  transition: all 0.3s ease;
+  background: transparent;
+}
+
+
+.hover-container:hover{
+  display: inline-block;
+  overflow: hidden;
+  height: 2.25em;
+  line-height: 1.5em;
+  cursor: pointer;
+  border-radius: 0.5rem;
+  padding: 1rem 1.5rem;
+  background: var(--color-surface);
 }
 
 .text-wrapper {
   display: flex;
   flex-direction: column;
-  transform: translateY(-1.5em);
+  transform: translateY(-2.25em);
   transition: transform 0.35s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .hover-container:hover .text-wrapper {
-  transform: translateY(-3em);
+  transform: translateY(-4.15rem);
 }
 
 .original-text,
 .new-text {
   display: block;
-  height: 1.5em;
+  height: 2em;
+}
+
+.highlight {
+  background: color-mix(in srgb, var(--color-surface) 15%, transparent 100%);
+  border: 1px solid color-mix(in srgb, var(--color-surface) 95%, transparent 100%);
+  padding: 0 0.45rem;
+  color: color-mix(in srgb, var(--color-surface) 15%, var(--color-text) 85%);
+}
+
+
+.button-highlight {
+  background: color-mix(in srgb, var(--color-surface) 15%, transparent 100%);
+  border: 1px solid color-mix(in srgb, var(--color-surface) 95%, transparent 100%);
+  padding: 0.5rem 1rem;
+  color: color-mix(in srgb, var(--color-surface) 15%, var(--color-text) 85%);
 }
